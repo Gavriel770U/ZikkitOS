@@ -12,7 +12,7 @@ else
 	echo "You have enough CPU cores for virtualization!"
 fi
 
-sudo apt update -y
+sudo apt upgrade -y && sudo apt update -y
 sudo apt install qemu qemu-kvm qemu-system-x86 virt-manager bridge-utils -y
 
 sudo useradd -g $USER libvirt
